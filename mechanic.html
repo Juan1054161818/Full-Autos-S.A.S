@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panel del Mecánico – FULL AUTOS SAS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="app">
+  <div class="phone">
+    <header class="brand-card">
+      <div class="brand-icon">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="#fff" d="M5 11c-1.1 0-2 .9-2 2v4h2v-2h14v2h2v-4c0-1.1-.9-2-2-2h-2l-2-4H9l-2 4H5zm4.4-3h5.2l1.5 3H7.9l1.5-3zM7 19a2 2 0 11-.001-4.001A2 2 0 017 19zm10 0a2 2 0 11-.001-4.001A2 2 0 0117 19z"/></svg>
+      </div>
+      <div class="brand-text">
+        <div class="brand-title">FULL AUTOS SAS</div>
+        <div class="brand-sub">Panel del Mecánico</div>
+      </div>
+    </header>
+
+    <main class="home">
+      <h2 class="home-title">Panel de Mecánico</h2>
+      <p class="home-sub">Seleccione un vehículo para agendar una revisión</p>
+
+      <div class="search-wrap">
+        <input type="text" class="input search-input" placeholder="Buscar por placa o propietario" />
+      </div>
+
+      <h3 class="section-title">Vehículos</h3>
+      <ul class="list">
+        <li class="list-item">
+          <div class="item-main">
+            <div class="item-title">ABC123</div>
+            <div class="item-sub">Toyota Corolla</div>
+            <div class="item-meta">Propietario: Juan Pérez</div>
+          </div>
+          <div class="item-side">
+            <span class="chip chip-year"><span class="chip-icon">🚗</span> 2019</span>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="item-main">
+            <div class="item-title">XYZ789</div>
+            <div class="item-sub">Honda Civic</div>
+            <div class="item-meta">Propietario: María López</div>
+          </div>
+          <div class="item-side">
+            <span class="chip chip-year"><span class="chip-icon">🚗</span> 2020</span>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="item-main">
+            <div class="item-title">DEF456</div>
+            <div class="item-sub">Mazda 3</div>
+            <div class="item-meta">Propietario: Carlos Rodríguez</div>
+          </div>
+          <div class="item-side">
+            <span class="chip chip-year"><span class="chip-icon">🚗</span> 2018</span>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="section-title">Información del mecánico</h3>
+      <section class="helper-card" style="margin-bottom:14px">
+        <p><strong>Técnico asignado:</strong> Carlos Martínez • Mecánico principal</p>
+      </section>
+
+      <h3 class="section-title">Posibles problemas</h3>
+      <ul class="issues">
+        <li><span class="dot dot-green"></span> Cambio de aceite <span class="chip chip-ok">Completado</span></li>
+        <li><span class="dot dot-orange"></span> Frenos delanteros <span class="chip chip-progress">En proceso</span></li>
+        <li><span class="dot dot-gray"></span> Alineación <span class="chip chip-pending">Pendiente</span></li>
+      </ul>
+
+      <div class="cta-footer">
+        <a href="index.html" class="btn-primary">← Volver</a>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <a href="index.html" class="profile-link">← Volver al Home</a>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

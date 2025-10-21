@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hoja de Vida – FULL AUTOS SAS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="app">
+  <div class="phone">
+    <header class="brand-card">
+      <div class="brand-icon">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="#fff" d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 6h5l-5-5v5zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg>
+      </div>
+      <div class="brand-text">
+        <div class="brand-title">FULL AUTOS SAS</div>
+        <div class="brand-sub">Hoja de Vida</div>
+      </div>
+    </header>
+
+    <main class="home">
+      <h2 class="home-title">Únete a Nuestro Equipo</h2>
+      <p class="home-sub">Completa el formulario para aplicar como mecánico</p>
+
+      <form class="form" id="resumeForm" novalidate>
+        <h3 class="section-title">Información Personal</h3>
+        <input class="input" id="fullName" name="fullName" type="text" placeholder="Nombre completo *" required />
+        <div class="error" id="error-fullName"></div>
+        <input class="input" id="email" name="email" type="email" placeholder="Correo electrónico *" required />
+        <div class="error" id="error-email"></div>
+        <input class="input" id="phone" name="phone" type="tel" placeholder="Teléfono *" required />
+        <div class="error" id="error-phone"></div>
+
+        <h3 class="section-title">Experiencia y Especialidades</h3>
+        <input class="input" id="experience" name="experience" type="number" min="0" max="60" placeholder="Años de experiencia" />
+        <div class="error" id="error-experience"></div>
+        <textarea class="input" id="specialties" name="specialties" rows="3" placeholder="Especialidades"></textarea>
+
+        <h3 class="section-title">Hoja de Vida</h3>
+        <input class="input" id="resumeFile" name="resumeFile" type="file" accept=".pdf,.doc,.docx" />
+        <div class="error" id="error-resumeFile"></div>
+        <small class="hint">Formatos aceptados: PDF, DOC, DOCX (máx. 5MB)</small>
+
+        <div class="cta-footer">
+          <button type="submit" class="btn-primary">Enviar Solicitud</button>
+        </div>
+      </form>
+
+      <div class="cta-footer">
+        <a href="index.html" class="btn-primary">← Volver</a>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <a href="index.html" class="profile-link">← Volver al Home</a>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+  <script src="resume.js"></script>
+</body>
+</html>
